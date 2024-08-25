@@ -9,7 +9,26 @@ const questions = [
         options: ["神はここにいます", "天使はそこにいます", "神の愛が満ちています", "神々が集まる場所"],
         answer: "神はここにいます"
     },
-    // 他の問題もここに追加できます...
+    {
+        question: "Congregavit nos in unum Christi amor",
+        options: ["キリストの愛が私たちを一つに集めた", "神の慈悲が私たちを守っている", "キリストの力が私たちを救った", "天の父が私たちを見守っている"],
+        answer: "キリストの愛が私たちを一つに集めた"
+    },
+    {
+        question: "Exsultemus et in ipso iucundemur",
+        options: ["その中で喜びに満たされよう", "一緒に笑顔になろう", "愛の中で楽しもう", "互いに祝福しよう"],
+        answer: "その中で喜びに満たされよう"
+    },
+    {
+        question: "Timeamus et amemus Deum vivum",
+        options: ["生きている神を畏れ、愛そう", "永遠の神に祈りを捧げよう", "生ける神を称えよう", "神の存在を信じよう"],
+        answer: "生きている神を畏れ、愛そう"
+    },
+    {
+        question: "Et ex corde diligamus nos sincero",
+        options: ["心から誠実に愛し合おう", "互いを尊重し、理解しよう", "誠実に真心を込めて接しよう", "互いに思いやりを持とう"],
+        answer: "心から誠実に愛し合おう"
+    }
 ];
 
 const quizContainer = document.getElementById('quiz-container');
