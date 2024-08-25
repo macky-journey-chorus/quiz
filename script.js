@@ -44,22 +44,23 @@ questions.forEach((q, i) => {
     const optionsDiv = document.createElement('div');
     optionsDiv.className = 'options';
 
+    const resultDiv = document.createElement('div');
+    resultDiv.className = 'result';
+    questionDiv.appendChild(resultDiv);
+
     q.options.forEach(option => {
         const button = document.createElement('button');
         button.textContent = option;
         button.onclick = () => {
-            const result = document.createElement('div');
-            result.className = 'result';
             if (option === q.answer) {
-                result.textContent = '正解！';
-                result.style.color = '#28a745';
+                resultDiv.textContent = '正解！';
+                resultDiv.style.color = '#28a745';
+                Array.from(optionsDiv.children).forEach(btn => btn.disabled = true);
             } else {
-                result.textContent = `不正解。正解は「${q.answer}」です。`;
-                result.style.color = '#dc3545';
+                resultDiv.textContent = '不正解。もう一度試してみてください。';
+                resultDiv.style.color = '#dc3545';
+                button.disabled = true;
             }
-            questionDiv.appendChild(result);
-            button.disabled = true;
-            Array.from(optionsDiv.children).forEach(btn => btn.disabled = true);
         };
         optionsDiv.appendChild(button);
     });
