@@ -47,7 +47,7 @@ const questions = [
     {
         question: "Et in medio nostri sit, Christus Deus",
         options: ["神であるキリストは、私たちのただ中におられる", "神であるキリストが共に歩んでいる", "神であるキリストは私たちの真ん中にいる", "神であるキリストが我らを導く"],
-        answer: "神であるキリストは、私たちのただ中におられる。"
+        answer: "神であるキリストは、私たちのただ中におられる"
     },
     {
         question: "Simul quoque cum beatis, videamus",
